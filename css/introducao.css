@@ -1,0 +1,59 @@
+.introducao{
+    max-width: 500px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    align-items: center;
+    
+}
+
+
+
+.introducao h1 {
+   
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+   position: relative;
+   align-items: center;
+    
+   
+}
+
+.introducao h1::before {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 250px;
+    background: url('../img/shark.png') no-repeat center ;
+    position: relative;
+    top: 100px;
+    left: -100px;
+    z-index: 1 ;
+    transform: skewY(1deg);
+
+}
+
+
+
+.introducao p{
+    font-size: 1.5rem;
+    color: #525252;
+    font-family: 'Roboto';
+}
+
+@media (max-width:1000px){
+    .introducao h1{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:800px){
+    .introducao{
+        grid-template-columns: 1fr 1fr;
+       
+    }
+}
+
